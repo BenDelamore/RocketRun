@@ -21,4 +21,4 @@ global.game_time = 0;
 
 global.grv = 0.3; // Gravity
 
-layer_vspeed("Background", -rocket_speed);
+layer_vspeed("Background", -rocket_speed_cur);

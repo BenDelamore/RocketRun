@@ -1,5 +1,7 @@
 global.game_time += 1/room_speed;
 
+scr_controls();
+
 // Rocket physics calculation
 if (key_ability)
 {
