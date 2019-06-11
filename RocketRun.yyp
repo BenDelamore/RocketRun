@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "9ed16469-872d-45eb-9687-d6a7ff411d31",
+            "Value": {
+                "id": "e1fb5c6a-c9de-45b4-9d09-b9711c98a8ea",
+                "resourcePath": "sprites\\spr_Blue\\spr_Blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2606514-d8c8-45f9-8fb7-bc7e932c79d2",
             "Value": {
                 "id": "4af8172e-fa42-4a9d-a690-3d4122857f5b",

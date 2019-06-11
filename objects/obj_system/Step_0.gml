@@ -19,6 +19,7 @@ if (progress_value == 1 && !global.win && !global.lose)
 if (!global.win && global.timer_cur > 0 && !global.win && !global.is_paused)
 {
 	global.timer_cur -= 1/room_speed;
+	//layer_background_alpha("Backgrounds_1",1)
 }
 
 if (global.timer_cur <=0 && !global.lose)
