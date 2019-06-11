@@ -1,5 +1,5 @@
 progress_value = 0;							// Linear player progress value
-progress_exp = 0.67;						// Progress curve strength (lower means progress starts fast)
+progress_exp = 1;						// Progress curve strength (lower means progress starts fast)
 progress_adj = 0;							// Adjusted player progress value
 rocket_accel = 1;							// Rcoket acceleration coefficient
 rocket_decel = 3;							// Rocket decceleration coefficient
