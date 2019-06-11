@@ -9,12 +9,20 @@ if (!global.win && !global.lose)
 	rocket_speed_cur -= key_ability * rocket_decel/room_speed;
 	rocket_speed_cur = clamp(rocket_speed_cur, rocket_speed_min, rocket_speed_max);
 	rocket_dist_cur -= rocket_speed_cur/60;
-	layer_vspeed("Background", -rocket_speed_cur);
+	//layer_vspeed("Background", -rocket_speed_cur);
+	
+	repeat(round(rocket_speed_cur/3))
+	{
+		instance_create_layer(random_range(0, room_width), room_height, "ins_stars", obj_star);
+	}
 }
 else
 {
-	layer_vspeed("Background", 0);
+	rocket_speed_cur = 0;
+	//layer_vspeed("Background", 0);
 }
+
+
 
 progress_value = clamp(1 - ((rocket_dist_cur) / (rocket_dist_start)), 0, 1);
 progress_adj = power(progress_value, progress_exp);

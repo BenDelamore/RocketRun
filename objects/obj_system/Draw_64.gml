@@ -22,7 +22,7 @@ draw_set_valign(1);
 
 //debug text
 draw_text(16, 128, rocket_dist_cur);
-draw_text(16, 160, rocket_speed_cur);
+draw_text(16, 160, floor(rocket_dist_cur));
 
 // Progress bar text
 draw_text(128, 632, "Progress to Destination")

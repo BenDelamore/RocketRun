@@ -35,8 +35,9 @@ if place_meeting(x,y,obj_Ladder)
 {
 	// Vertical movement calculation
 	var movey = (key_down - key_up);
+	vsp = lerp(vsp, movey * walksp * walksp_mult, 0.33);
 }
-vsp = lerp(vsp, movey * walksp * walksp_mult, 0.33);
+
 
 //clamp position to room
 x = round( clamp(x, 64/2, room_width - (64/2)) );
