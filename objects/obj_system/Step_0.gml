@@ -27,7 +27,7 @@ if (!global.win && global.timer_cur > 0 && !global.win && !global.is_paused)
 	global.timer_cur -= 1/room_speed;
 }
 
-if (global.timer_cur <=0 && !global.lose)
+if (rocket_dist_cur <=0 && rocket_speed_cur > 5 &&!global.lose)
 {
 	scr_message("You Crashed!", 5);
 	global.lose = true;
