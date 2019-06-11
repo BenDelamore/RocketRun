@@ -1,7 +1,5 @@
 var hsp = argument[0];
 
-
-
 // Basic collisions and gravity
 
 // Calculate gravity

@@ -13,7 +13,7 @@ draw_rectangle(64, 63, 265, 69, 0);
 draw_rectangle(127, 656-1, 1280-127, 656+4+1, 0);
 
 // Timer bar bg
-draw_rectangle(539, 72, 741, 78, 0);
+//draw_rectangle(539, 72, 741, 78, 0);
 
 
 draw_set_font(fnt_body);
@@ -32,7 +32,7 @@ draw_rectangle(65, 64, 200 * clamp((obj_player.sp_cur/obj_player.sp_max), 0, 1) 
 
 draw_set_color($583AE9);
 // Timer bar
-draw_rectangle(540, 73, (200 * (global.timer_cur/global.timer_max)) + 540, 77, 0);
+//draw_rectangle(540, 73, (200 * (global.timer_cur/global.timer_max)) + 540, 77, 0);
 
 draw_set_color($859D26);
 //Progress bar
