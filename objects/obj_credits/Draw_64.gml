@@ -13,7 +13,7 @@ if (room=room_last)
 
 	draw_text(640, 256+64,"Ryan Wilkinson");
 
-	draw_text(640, 256+128,"Elijah");
+	draw_text(640, 256+128,"Elijah Shadbolt");
 	
 	draw_text(640, 256+192,"David Morris");
 
