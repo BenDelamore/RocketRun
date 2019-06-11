@@ -147,7 +147,8 @@
         "3b63fd6e-8f33-469b-bb08-3c86a49a0e09",
         "46e8e6b8-ac76-43b2-a9c3-09df8cd9d8ee",
         "28a3bbe1-fa27-46ab-9fe5-ce56ae3b72eb",
-        "59236848-382c-4ea3-a222-35852fa1cb4d"
+        "59236848-382c-4ea3-a222-35852fa1cb4d",
+        "26c18082-cf8d-4302-a92c-6e11fea31e20"
     ],
     "IsDnD": false,
     "layers": [
@@ -369,13 +370,39 @@
             "visible": true
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Instances_1",
+            "id": "07a68a67-cbe0-4a48-8e66-a2ddb4d190bc",
+            "depth": 300,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": false,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_10C6DE67","id": "26c18082-cf8d-4302-a92c-6e11fea31e20","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_10C6DE67","objId": "7cec5b66-5032-4556-8da0-acaba093283f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 224,"y": 32}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": false
+        },
+        {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Backgrounds_1",
             "id": "2131d6e3-9e7c-460c-9fd1-0c3048456890",
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -410,7 +437,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_Blue, 0, 0, 0, room_width/64, room_height/64, 0, c_white, obj_system.progress_value^6);

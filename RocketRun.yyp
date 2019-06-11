@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "7cec5b66-5032-4556-8da0-acaba093283f",
+            "Value": {
+                "id": "d85079b3-8cca-454a-be8b-f2bb55cf2874",
+                "resourcePath": "objects\\obj_sky\\obj_sky.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7e06657e-1424-41f1-8039-122c1f2d403c",
             "Value": {
                 "id": "41bab94c-c24d-47f8-bc11-208f1575f71f",
@@ -284,6 +292,14 @@
                 "id": "cb8b2c67-79ad-451a-b8a4-7aab9c15efa1",
                 "resourcePath": "objects\\obj_solid\\obj_solid.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f01fe35-4151-4a53-b5ed-df049d5bad2f",
+            "Value": {
+                "id": "3653cec7-f52a-47b9-aa84-e2a5dbeee5a8",
+                "resourcePath": "shaders\\shd_motion_blur\\shd_motion_blur.yy",
+                "resourceType": "GMShader"
             }
         },
         {

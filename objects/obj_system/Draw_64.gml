@@ -19,6 +19,11 @@ draw_rectangle(127, 656-1, 1280-127, 656+4+1, 0);
 draw_set_font(fnt_body);
 draw_set_halign(0);
 draw_set_valign(1);
+
+//debug text
+draw_text(16, 128, rocket_dist_cur);
+draw_text(16, 160, rocket_speed_cur);
+
 // Progress bar text
 draw_text(128, 632, "Progress to Destination")
 
