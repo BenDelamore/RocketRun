@@ -1,0 +1,1 @@
+scr_message("Why not collect some gems along the way?", 10);

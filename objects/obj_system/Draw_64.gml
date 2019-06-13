@@ -10,7 +10,7 @@ draw_set_alpha(1);
 
 // Progress bar bg
 draw_set_alpha(0.75);
-draw_rectangle(127, 656-1, 1280-127, 656+4+1, 0);
+draw_rectangle(127, 656-1, 1280-127, 656+5+1, 0);
 
 // Timer bar bg
 //draw_rectangle(539, 72, 741, 78, 0);
@@ -55,7 +55,7 @@ draw_set_color($583AE9);
 //draw_rectangle(540, 73, (200 * (global.timer_cur/global.timer_max)) + 540, 77, 0);
 
 draw_set_color($333333);
-if (global.win) {draw_set_color($29a329);}
+if (global.win) {draw_set_color($367a1f);}
 if (global.lose) {draw_set_color($2626d9);}
 //Progress bar
-draw_rectangle(128, 656, round(1024 * progress_adj + 128), 656+4, 0);
+draw_rectangle(128, 656, round(1024 * progress_adj + 128), 656+5, 0);
