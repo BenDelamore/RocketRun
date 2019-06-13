@@ -44,7 +44,10 @@ if (!global.win && !global.lose)
 }
 else
 {
-	global.land_speed = rocket_dist_cur;
+	if (!global.end_time > 0)
+	{
+		global.land_speed = rocket_speed_cur;
+	}
 	rocket_speed_cur = 0;
 	global.end_time++;
 }

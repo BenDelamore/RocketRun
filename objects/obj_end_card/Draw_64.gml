@@ -16,7 +16,7 @@ if (draw_alpha > 0 && grade_set)
 	draw_text(640, 184 + y, grade[grade_value]);
 	
 	draw_set_font(fnt_body_small);
-	draw_text_ext(640, 366 + y, end_text[grade_value], 24, 240);
+	draw_text_ext(640, 366 + y, end_text[grade_value], 24, 280);
 	
 	draw_text(640, 514 + y, gem_text[grade_value]);
 	

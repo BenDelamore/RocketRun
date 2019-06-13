@@ -21,7 +21,7 @@ draw_set_halign(0);
 draw_set_valign(1);
 
 //debug text
-draw_text(16, 128, rocket_dist_cur);
+draw_text(16, 128, global.land_speed);
 draw_text(16, 160, rocket_speed_cur);
 
 // Progress bar text
