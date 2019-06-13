@@ -21,15 +21,15 @@ draw_set_halign(0);
 draw_set_valign(1);
 
 //debug text
-//draw_text(16, 128, rocket_dist_cur);
-//draw_text(16, 160, rocket_speed_cur);
+draw_text(16, 128, rocket_dist_cur);
+draw_text(16, 160, rocket_speed_cur);
 
 // Progress bar text
 draw_text(128, 632, "Progress to Destination")
 
 draw_set_halign(2);
 // Progress bar value
-//draw_text(1280-127, 632, progress_value);
+draw_text(1280-127, 632, progress_value);
 
 // Score
 draw_set_alpha(0.9);

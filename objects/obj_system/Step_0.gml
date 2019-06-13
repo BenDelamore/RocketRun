@@ -44,6 +44,7 @@ if (!global.win && !global.lose)
 }
 else
 {
+	global.land_speed = rocket_dist_cur;
 	rocket_speed_cur = 0;
 	global.end_time++;
 }
@@ -56,12 +57,14 @@ gem_counter_age++;
 
 if (rocket_dist_cur <=0 && !global.win && !global.lose)
 {
+	global.gems_before_end = global.gems;
+	global.gems = 0;
+	
 	if (rocket_speed_cur > 5)
 	{
 		scr_message("You Crashed!", 10);
 		global.lose = true;
-		global.gems = 0;
-		
+
 	}
 	else
 	{
@@ -69,4 +72,9 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 		global.win = true;
 	}
 	rocket_dist_cur = 0;
+}
+
+if (global.win || global.lose)
+{
+	global.end_time += 1/room_speed;	
 }

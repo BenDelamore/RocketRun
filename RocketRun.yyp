@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "71f2a7b9-c04f-4fe0-82e2-f4a8fdfc90e3",
+            "Value": {
+                "id": "f1b65bd2-f77b-46df-ba05-ccddf7e1ede6",
+                "resourcePath": "fonts\\fnt_body_small\\fnt_body_small.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "73c83343-19b4-499e-bac0-e9a4d4a03278",
             "Value": {
                 "id": "9acd6c04-f190-45cc-a4ce-d69737568d9c",
