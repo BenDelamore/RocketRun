@@ -59,6 +59,7 @@ if (instance_exists(obj_interactable))
 		if (key_act_p)
 		{
 			// State change to "Interacting"
+			target_block.spawn_gem = true;
 			target_block.hp = 0;
 			target_block = 0;
 		}

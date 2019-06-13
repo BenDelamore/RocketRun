@@ -1,13 +1,13 @@
 if (abs(speed) > 0.2)
 {
-	speed -= 0.2;
+	speed -= 0.0;
 }
 else
 {
 	speed = 0;
 }
 
-scr_move(hsp, vsp);
+scr_move_OLD(hsp, vsp);
 
 if (fadeout)
 {

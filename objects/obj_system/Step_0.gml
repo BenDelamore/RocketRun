@@ -11,10 +11,22 @@ if (!global.win && !global.lose)
 	rocket_dist_cur -= rocket_speed_cur/60;
 	//layer_vspeed("Background", -rocket_speed_cur);
 	
+	// Spawn stars
 	repeat(round(rocket_speed_cur/3))
 	{
 		instance_create_layer(random_range(0, room_width), room_height, "ins_stars", obj_star);
 	}
+	
+	// Spawn crates
+	
+	if ((random(1)) <= 0.1 )
+	{
+		with (instance_create_depth(random_range(0, room_width), room_height, 0, obj_crate))
+		{
+			vsp = random_range(-2, -7);
+		}
+	}
+	
 }
 else
 {
@@ -40,6 +52,7 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 	{
 		scr_message("You Crashed!", 10);
 		global.lose = true;
+		global.gems = 0;
 		
 	}
 	else

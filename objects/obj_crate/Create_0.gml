@@ -6,9 +6,11 @@ if (instance_place(x,y, obj_crate) || instance_place(x,y, obj_player))
 
 this = id;
 
-collisons = true;
+spawn_gem = false;
+collisons = false;
 hsp = 0; 
 vsp = 0;
+rsp = 0;
 
 hp = 30;
 hover = false;
