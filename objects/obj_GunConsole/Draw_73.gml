@@ -1,8 +1,8 @@
-/// @description
+/// @description draw is_being_held circle
 
 if (is_being_held)
 {
-	if (frames_held > 90 && frames_held < 110)
+	if (is_in_sweet_spot)
 	{
 		draw_set_color(c_yellow);
 		draw_set_alpha(0.5);

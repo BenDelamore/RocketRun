@@ -7,7 +7,7 @@ hp_max = 200
 hp_cur = hp_max;
 
 sp_max = 200
-sp_cur = sp_max;
+sp_cur = 1;
 
 target_block = 0;
 

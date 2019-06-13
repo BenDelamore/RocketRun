@@ -6,7 +6,17 @@ scr_controls();
 if (!global.win && !global.lose)
 {
 	rocket_speed_cur += rocket_accel/room_speed;
-	rocket_speed_cur -= key_ability * rocket_decel/room_speed;
+	
+	// check EngineConsole interaction
+	if (instance_exists(obj_player) && instance_exists(obj_EngineConsole))
+	{
+		var d = point_distance(obj_player.x, obj_player.y, obj_EngineConsole.x, obj_EngineConsole.y);
+		if (d < 72)
+		{
+			rocket_speed_cur -= key_act * rocket_decel/room_speed;
+		}
+	}
+	
 	rocket_speed_cur = clamp(rocket_speed_cur, rocket_speed_min, rocket_speed_max);
 	rocket_dist_cur -= rocket_speed_cur/60;
 	//layer_vspeed("Background", -rocket_speed_cur);
