@@ -36,7 +36,7 @@ if (global.is_paused)
 	
 		if (select == 1)
 		{
-			room_goto(rm_credits);
+			room_restart();
 		}
 	
 		if (select == 2)

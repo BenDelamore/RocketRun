@@ -8,6 +8,8 @@ direction = point_direction(x, y, target.x, target.y)
 
 age = 0;
 spd = 0;
+xpos = x;
+ypos = y;
 speed = 0;
 
 gemValue = 1 + (gemType * 2);

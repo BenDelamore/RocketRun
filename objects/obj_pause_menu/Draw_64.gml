@@ -17,7 +17,7 @@ if (draw_alpha > 0)
 		var yy = i * 60;
 	
 		if (i = 0) {var item = "Continue";}
-		if (i = 1) {var item = "Credits"}
+		if (i = 1) {var item = "Restart"}
 		if (i = 2) {var item = "Main menu"}
 	
 		if (select = i)

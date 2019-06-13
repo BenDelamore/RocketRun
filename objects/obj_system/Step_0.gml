@@ -23,7 +23,7 @@ if (!global.win && !global.lose)
 		rocket_dist_cur -= rocket_speed_cur/room_speed;
 	
 		// Spawn stars
-		repeat(ceil(rocket_speed_cur/3))
+		repeat(ceil(rocket_speed_cur/4))
 		{
 			instance_create_layer(random_range(0, room_width), random_range(room_height - 64, room_height + 64), "ins_stars", obj_star);
 		}
