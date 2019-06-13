@@ -589,6 +589,14 @@
                 "resourcePath": "objects\\obj_break_particle\\obj_break_particle.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "feb30335-f376-4b24-b796-4ae7607102e9",
+            "Value": {
+                "id": "868b2456-357a-4cf0-8840-fa0ee58a1aa0",
+                "resourcePath": "objects\\obj_EngineConsole\\obj_EngineConsole.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
