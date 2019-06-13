@@ -45,17 +45,12 @@ if (!global.win && !global.lose)
 else
 {
 	rocket_speed_cur = 0;
+	global.end_time++;
 }
 
 progress_value = clamp(1 - ((rocket_dist_cur) / (rocket_dist_start)), 0, 1);
 progress_adj = power(progress_value, progress_exp);
 
-
-// Game Timer
-if (!global.win && global.timer_cur > 0 && !global.win && !global.is_paused)
-{
-	global.timer_cur -= 1/room_speed;
-}
 
 gem_counter_age++;
 

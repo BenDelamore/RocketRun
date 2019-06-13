@@ -27,6 +27,7 @@ global.timer_cur = global.timer_max;		// Game timer in seconds
 global.win = false;
 global.lose = false;
 global.game_time = 0;
+global.end_time = 0;
 
 global.grv = 0.3; // Gravity
 
