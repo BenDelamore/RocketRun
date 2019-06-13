@@ -1,4 +1,9 @@
 /// @description
+if (global.game_time > 3)
+{
+	age++;
+}
+
 scr_controls();
 
 if (!global.win && !global.lose)

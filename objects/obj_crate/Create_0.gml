@@ -7,7 +7,7 @@ if (instance_place(x,y, obj_crate) || instance_place(x,y, obj_player))
 this = id;
 
 spawn_gem = false;
-collisons = false;
+collisons = true;
 hsp = 0; 
 vsp = 0;
 rsp = 0;

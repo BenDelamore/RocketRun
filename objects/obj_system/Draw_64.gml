@@ -33,7 +33,10 @@ draw_set_halign(2);
 
 // Score
 draw_sprite(spr_gem, 3, 1280-144, 44);
-draw_text(1280-48, 48, global.gems);
+if (frac(gem_counter_age/5) == 0 || gem_counter_age > 25)
+{
+	draw_text(1280-48, 48, global.gems);
+}
 draw_line(1280-160, 66, 1280-48, 66);
 
 draw_set_color($339933);

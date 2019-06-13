@@ -20,22 +20,32 @@ else
 // Horizontal Collision
 if (place_meeting(x + hsp, y, obj_solid) && collisons)
 {
+	var xc = instance_place(x + hsp, y, obj_solid)
+	
 	while(!place_meeting(x + sign(hsp), y, obj_solid))
 	{
 		x = x + sign(hsp);
 	}
-	hsp = 0;
+	if (xc.collisons)
+	{
+		hsp = 0;
+	}
 }
 x = x + hsp;
 
 // Vertical Collision
 if (place_meeting(x, y + vsp, obj_solid) && collisons)
 {
+	var yc = instance_place(x, y + vsp, obj_solid)
+	
 	while(!place_meeting(x, y + sign(vsp), obj_solid))
 	{
 		y = y + sign(vsp);
 	}
-	vsp = 0;
+	if (yc.collisons)
+	{
+		vsp = 0;
+	}
 }
 y = y + vsp;
 

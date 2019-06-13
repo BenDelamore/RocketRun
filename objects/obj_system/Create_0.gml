@@ -11,6 +11,7 @@ rocket_dist_cur	= rocket_dist_start			// Current rocket distance from Earth
 end_buffer = 32;
 
 alarm[0] = 60;
+gem_counter_age = 25;
 
 randomize();
 repeat(320)

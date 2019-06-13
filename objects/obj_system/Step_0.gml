@@ -36,6 +36,7 @@ if (!global.win && !global.lose)
 			{
 				vsp = random_range(-2, -7);
 				rsp = random_range(-2, 2);
+				collisons = false;
 			}
 		}
 	}
@@ -55,6 +56,8 @@ if (!global.win && global.timer_cur > 0 && !global.win && !global.is_paused)
 {
 	global.timer_cur -= 1/room_speed;
 }
+
+gem_counter_age++;
 
 if (rocket_dist_cur <=0 && !global.win && !global.lose)
 {
