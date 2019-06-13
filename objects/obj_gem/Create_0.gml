@@ -7,6 +7,7 @@ target_distance = point_distance(x, y, target.x, target.y);
 direction = point_direction(x, y, target.x, target.y)
 
 age = 0;
+spd = 0;
 speed = 0;
 
 gemValue = 1 + (gemType * 2);

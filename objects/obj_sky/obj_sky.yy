@@ -5,13 +5,13 @@
     "name": "obj_sky",
     "eventList": [
         {
-            "id": "46c1a8dd-d460-40e6-b327-4848d273ee9f",
+            "id": "fa5b3d71-c931-4833-9a50-6c8c9e4c8a8a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 73,
-            "eventtype": 8,
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "7cec5b66-5032-4556-8da0-acaba093283f"
         }
     ],
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "9ed16469-872d-45eb-9687-d6a7ff411d31",
     "visible": true
 }

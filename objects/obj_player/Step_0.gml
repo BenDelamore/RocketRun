@@ -17,25 +17,33 @@ else
 }
 
 // Horizontal movement calculation
-var movex = (key_right - key_left);
-hsp = lerp(hsp, movex * walksp * walksp_mult, 0.33);
+if (!global.is_paused)
+{
+	var movex = (key_right - key_left);
+	hsp = lerp(hsp, movex * walksp * walksp_mult, 0.33);
 
-// Sprite flipping
-if (hsp < -walksp * 0.7)
-{
-	image_xscale = -1;
-}
-else if (hsp > walksp * 0.7)
-{
-	image_xscale = 1;
-}
+	// Sprite flipping
+	if (hsp < -walksp * 0.7)
+	{
+		image_xscale = -1;
+	}
+	else if (hsp > walksp * 0.7)
+	{
+		image_xscale = 1;
+	}
 
-var movey = 0;
-if place_meeting(x,y,obj_Ladder)
+	var movey = 0;
+	if place_meeting(x,y,obj_Ladder)
+	{
+		// Vertical movement calculation
+		var movey = (key_down - key_up);
+		vsp = lerp(vsp, movey * walksp * walksp_mult, 0.33);
+	}
+}
+else
 {
-	// Vertical movement calculation
-	var movey = (key_down - key_up);
-	vsp = lerp(vsp, movey * walksp * walksp_mult, 0.33);
+	vsp = 0;
+	hsp = 0;
 }
 
 
@@ -52,7 +60,7 @@ if (instance_exists(obj_interactable))
 {
 	target_block = instance_nearest(x, y, obj_interactable)
 
-	if (point_distance(x, y, target_block.x, target_block.y) < 72)
+	if (point_distance(x, y, target_block.x, target_block.y) < 72 && !global.is_paused)
 	{
 		interact_in_range = true;
 	

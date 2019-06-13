@@ -1,7 +1,7 @@
 /// @description
 scr_controls();
 
-if (!global.win && !global.lose)
+if (!global.win && !global.lose && !global.is_paused)
 {
 	if (instance_exists(obj_player))
 	{
@@ -18,7 +18,7 @@ if (!global.win && !global.lose)
 			is_being_held = key_act;
 			is_in_sweet_spot = frames_held > sweet_spot_min && frames_held < sweet_spot_max;
 		
-			if (key_act_p && is_being_held)
+			if (key_act_p && is_being_held && !global.is_paused)
 			{
 				var bullet = instance_create_layer(x, y, "Instances", obj_Bullet);
 				bullet.x = x + spawn_x_offset;

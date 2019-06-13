@@ -4,7 +4,7 @@ var hsp = argument[0],
 
 
 // Freeze movement on death or pause
-if (global.is_paused || global.is_dead)
+if (global.is_paused)
 {
 	hsp = 0;
 	vsp = 0;
@@ -19,7 +19,8 @@ if (place_meeting(x + hsp, y, obj_solid && collisons))
 	}
 	hsp = 0;
 }
-x = x + hsp;
+
+if (!global.is_paused) {x = x + hsp;}
 
 // Vertical Collision
 if (place_meeting(x, y + vsp, obj_solid && collisons))
@@ -30,4 +31,4 @@ if (place_meeting(x, y + vsp, obj_solid && collisons))
 	}
 	vsp = 0;
 }
-y = y + vsp;
+if (!global.is_paused) {y = y + vsp;}

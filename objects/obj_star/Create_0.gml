@@ -1,4 +1,4 @@
-y -= obj_system.rocket_speed_cur;
+y -= (obj_system.rocket_speed_cur/1.5);
 
 scale = random_range(0.5,2);
 image_yscale = clamp(abs(obj_system.rocket_speed_cur/3), 1, 1000);

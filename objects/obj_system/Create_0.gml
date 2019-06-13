@@ -1,11 +1,11 @@
 progress_value = 0;							// Linear player progress value
 progress_exp = 1.931;						// Progress curve strength
 progress_adj = 0;							// Adjusted player progress value
-rocket_accel = 1;							// Rcoket acceleration coefficient
-rocket_decel = 3;							// Rocket decceleration coefficient
-rocket_speed_min = -5;						// Minimum rocket speed
-rocket_speed_max = 60						// Maximum rocket speed
-rocket_speed_cur = 1;						// Current rocket speed
+rocket_accel = 0.5;							// Rcoket acceleration coefficient
+rocket_decel = 1.25;						// Rocket decceleration coefficient
+rocket_speed_min = 1;						// Minimum rocket speed
+rocket_speed_max = 30						// Maximum rocket speed
+rocket_speed_cur = 0.5;						// Current rocket speed
 rocket_dist_start = 2048;					// Starting rocket distance from Earth
 rocket_dist_cur	= rocket_dist_start			// Current rocket distance from Earth
 end_buffer = 32;

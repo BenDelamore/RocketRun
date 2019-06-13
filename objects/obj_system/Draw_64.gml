@@ -29,7 +29,7 @@ draw_text(128, 632, "Progress to Destination")
 
 draw_set_halign(2);
 // Progress bar value
-//draw_text(1280-127, 632, floor(progress_value * 100));
+draw_text(1280-127, 632, progress_value);
 
 // Score
 draw_sprite(spr_gem, 3, 1280-144, 44);

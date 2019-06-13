@@ -3,14 +3,17 @@ var hsp = argument[0];
 // Basic collisions and gravity
 
 // Calculate gravity
-vsp += global.grv;
+
 
 
 if (global.is_paused)
 {
 	hsp = 0;
 }
-
+else
+{
+	vsp += global.grv;	
+}
 
 #region //  ---- COLLISIONS ----
 
