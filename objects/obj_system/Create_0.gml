@@ -10,6 +10,8 @@ rocket_dist_start = 2048;					// Starting rocket distance from Earth
 rocket_dist_cur	= rocket_dist_start			// Current rocket distance from Earth
 end_buffer = 32;
 
+alarm[0] = 60;
+
 randomize();
 repeat(320)
 {

@@ -5,3 +5,4 @@ time = argument1;
 
 obj_messagebox.message_string = str;
 obj_messagebox.message_timer = time;
+obj_messagebox.age = 0;

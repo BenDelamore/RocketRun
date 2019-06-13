@@ -1,0 +1,1 @@
+scr_message("Slow down the rocket to land it safely", 10);

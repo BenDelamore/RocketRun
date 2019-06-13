@@ -1,4 +1,5 @@
 scr_move_OLD(hsp,vsp);
+image_angle += rsp;
 
 if (global.lose)
 {

@@ -1,4 +1,5 @@
-message_timer = 10;
-message_string = "Slow down the rocket to land it safely";
+message_timer = 0;
+age = 0;
+message_string = "";
 x = 0;
 y = 0;
