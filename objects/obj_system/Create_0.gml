@@ -5,8 +5,8 @@ rocket_accel = 1;							// Rcoket acceleration coefficient
 rocket_decel = 3;							// Rocket decceleration coefficient
 rocket_speed_min = -5;						// Minimum rocket speed
 rocket_speed_max = 60						// Maximum rocket speed
-rocket_speed_cur = 0;						// Current rocket speed
-rocket_dist_start = 3000;					// Starting rocket distance from Earth
+rocket_speed_cur = 1;						// Current rocket speed
+rocket_dist_start = 2048;					// Starting rocket distance from Earth
 rocket_dist_cur	= rocket_dist_start			// Current rocket distance from Earth
 end_buffer = 32;
 

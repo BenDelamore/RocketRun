@@ -11,16 +11,15 @@ if (!global.win && !global.lose)
 			
 			if (key_act_p)
 			{
-				is_being_held = true;
+			
 				frames_held = 0;
 			}
 			
-			
+			is_being_held = key_act;
 			is_in_sweet_spot = frames_held > sweet_spot_min && frames_held < sweet_spot_max;
 		
 			if (key_act_p && is_being_held)
 			{
-				is_being_held = false;
 				var bullet = instance_create_layer(x, y, "Instances", obj_Bullet);
 				bullet.x = x + spawn_x_offset;
 				bullet.y = y + spawn_y_offset;
@@ -34,11 +33,12 @@ if (!global.win && !global.lose)
 				}
 			}
 			
+			image_index = is_being_held ? 2 : 1;
+			
 		}
 		else
 		{
 			is_in_range = false;
-			is_being_held = false;
 		}
 	}
 
@@ -46,8 +46,4 @@ if (!global.win && !global.lose)
 	{
 		frames_held += 1;
 	}
-}
-else
-{
-	is_being_held = false;
 }

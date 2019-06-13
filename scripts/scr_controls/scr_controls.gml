@@ -6,7 +6,7 @@ key_up = max( keyboard_check(vk_up), keyboard_check(ord("W")) );
 key_shift = keyboard_check(vk_shift);
 key_down = max( keyboard_check(vk_down), keyboard_check(ord("S")) );
 key_ctrl = max (keyboard_check(vk_control));
-key_act = max( keyboard_check(vk_enter), keyboard_check(ord("E")) );
+key_act = max( keyboard_check(vk_enter), keyboard_check(ord("E")), keyboard_check(vk_space) );
 key_ability = max( keyboard_check(vk_control), keyboard_check(vk_alt), keyboard_check(vk_space) );
 
 key_up_p = max( keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")) );
@@ -16,4 +16,4 @@ key_right_p = max( keyboard_check_pressed(vk_right), keyboard_check_pressed(ord(
 key_jump = max( keyboard_check_pressed(vk_space),keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")) );
 key_act_p = max( keyboard_check_pressed(vk_enter), keyboard_check_pressed(ord("E")), keyboard_check_pressed(vk_space) );
 
-key_act_r = key_act = max( keyboard_check_released(vk_enter), keyboard_check_released(vk_space) );
+key_act_r = key_act = max( keyboard_check_released(vk_enter), keyboard_check_released(vk_space), keyboard_check_released(ord("E")) );

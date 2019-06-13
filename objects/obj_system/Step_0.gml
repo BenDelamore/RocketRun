@@ -18,8 +18,7 @@ if (!global.win && !global.lose)
 	}
 	
 	rocket_speed_cur = clamp(rocket_speed_cur, rocket_speed_min, rocket_speed_max);
-	rocket_dist_cur -= rocket_speed_cur/60;
-	//layer_vspeed("Background", -rocket_speed_cur);
+	rocket_dist_cur -= rocket_speed_cur/room_speed;
 	
 	// Spawn stars
 	repeat(round(rocket_speed_cur/3))
@@ -41,10 +40,7 @@ if (!global.win && !global.lose)
 else
 {
 	rocket_speed_cur = 0;
-	//layer_vspeed("Background", 0);
 }
-
-
 
 progress_value = clamp(1 - ((rocket_dist_cur) / (rocket_dist_start)), 0, 1);
 progress_adj = power(progress_value, progress_exp);
@@ -72,4 +68,3 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 	}
 	rocket_dist_cur = 0;
 }
-

@@ -1,6 +1,6 @@
 if (abs(speed) > 0.2)
 {
-	speed -= 0.0;
+	speed -= 0.05;
 }
 else
 {
