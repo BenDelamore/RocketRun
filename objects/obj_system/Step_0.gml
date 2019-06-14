@@ -44,36 +44,62 @@ if (!global.win && !global.lose)
 }
 else
 {
-	if (!global.end_time > 0)
-	{
-		global.land_speed = rocket_speed_cur;
-	}
 	rocket_speed_cur = 0;
-	global.end_time++;
 }
 
 progress_value = clamp(1 - ((rocket_dist_cur) / (rocket_dist_start)), 0, 1);
 progress_adj = power(progress_value, progress_exp);
 
-
 gem_counter_age++;
 
 if (rocket_dist_cur <=0 && !global.win && !global.lose)
 {
+	// Assess performance
+	scr_message("Rocket Landed. Analysing Performance", 5);
 	global.gems_before_end = global.gems;
-	global.gems = 0;
+	if (!global.end_time > 0)
+	{
+		global.land_speed = rocket_speed_cur;
+	}
 	
-	if (rocket_speed_cur > 5)
+	with (obj_end_card)
 	{
-		scr_message("You Crashed!", 10);
-		global.lose = true;
+		if (global.land_speed >= 0)
+		{
+			grade_value = 0;
+		}
+		if (global.land_speed > 4)
+		{
+			grade_value = 1;
+			global.gems *= 0.8;
+		}
+		if (global.land_speed > 7)
+		{
+			grade_value = 2;
+			global.gems *= 0.6;
+		}
+		if (global.land_speed > 11)
+		{
+			grade_value = 3;
+			global.gems *= 0.4;
+		}
+		if (global.land_speed > 15)
+		{
+			grade_value = 4;
+			global.gems *= 0.2;
+		}
+		if (global.land_speed > 19)
+		{
+			grade_value = 5;
+			global.gems *= 0.0;
+		}
+		global.gems = round(global.gems);
+		global.gems_lost = global.gems_before_end - global.gems;
+		grade_set = true;
+	}
 
-	}
-	else
-	{
-		scr_message("You Landed Safely!", 10);
-		global.win = true;
-	}
+	
+	global.win = true;
 	rocket_dist_cur = 0;
 }
 
