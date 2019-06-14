@@ -22,7 +22,7 @@ if (draw_alpha > 0)
 	
 		if (select = i)
 		{
-			draw_sprite(spr_menu_select, 0, 460, y + yy + 296);
+			draw_sprite(spr_menu_select, 0, 461, y + yy + 296);
 			draw_set_color(c_white);
 			draw_text(1280/2, y + 16 + yy + 295, item);
 		}

@@ -13,7 +13,7 @@ if (draw_alpha > 0 && grade_set)
 	draw_set_valign(0);
 	draw_set_color($f5f5f5);
 	
-	draw_text(640, 180 + y, grade[grade_value]);
+	draw_text(640, 176 + y, grade[grade_value]);
 	
 	draw_set_font(fnt_body_small);
 	draw_text_ext(640, 366 + y, end_text[grade_value], 24, 280);
