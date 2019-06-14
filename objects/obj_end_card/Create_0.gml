@@ -8,9 +8,9 @@ end_text[5] = "You Landed the Rocket and completely destroyed it!";
 
 gem_text[0] = "And kept all of your gems!";
 gem_text[1] = "But lost a small handfull of gems";
-gem_text[2] = "But lost a number of your gems";
-gem_text[3] = "But lost many of your gems";
-gem_text[4] = "But lost most of your gems";
+gem_text[2] = "And lost a number of your gems";
+gem_text[3] = "And lost manry of your gems";
+gem_text[4] = "And lost most of your gems";
 gem_text[5] = "All gems lost!";
 
 grade[0] = "A";

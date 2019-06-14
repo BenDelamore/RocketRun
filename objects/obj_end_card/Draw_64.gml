@@ -1,8 +1,8 @@
 if (draw_alpha > 0 && grade_set)
 {
-	//draw_set_alpha(draw_alpha * 0.5);
-	//draw_set_color($f5f5f5);
-	//draw_rectangle(0, 0, 1280, 720, 0);
+	draw_set_alpha(draw_alpha * 0.1);
+	draw_set_color($f5f5f5);
+	draw_rectangle(0, 0, 1280, 720, 0);
 	
 	draw_set_alpha(draw_alpha);
 
@@ -13,7 +13,7 @@ if (draw_alpha > 0 && grade_set)
 	draw_set_valign(0);
 	draw_set_color($f5f5f5);
 	
-	draw_text(640, 184 + y, grade[grade_value]);
+	draw_text(640, 180 + y, grade[grade_value]);
 	
 	draw_set_font(fnt_body_small);
 	draw_text_ext(640, 366 + y, end_text[grade_value], 24, 280);
