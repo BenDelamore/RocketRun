@@ -1,6 +1,6 @@
 scr_controls();
 
-if (global.end_time > 2)
+if (global.end_time > 3)
 {
 	show_card = true;
 }
