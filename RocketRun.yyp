@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "9fe5d7e7-b5c1-41e6-be1f-ff716502a376",
+            "Value": {
+                "id": "6c94057e-04f1-414f-996e-6fb41ded0c85",
+                "resourcePath": "sprites\\spr_Turret\\spr_Turret.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2606514-d8c8-45f9-8fb7-bc7e932c79d2",
             "Value": {
                 "id": "4af8172e-fa42-4a9d-a690-3d4122857f5b",
@@ -444,6 +452,14 @@
                 "id": "9ec00d9f-aa3a-4efd-9a1a-8b26db4143a6",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ac9fbf7b-6e19-43e6-b999-ec09f2132b34",
+            "Value": {
+                "id": "eb5a0b35-4f06-421a-8c1a-c53a3a687880",
+                "resourcePath": "sprites\\spr_rocket_thruster\\spr_rocket_thruster.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
