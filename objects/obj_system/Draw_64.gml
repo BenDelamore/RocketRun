@@ -38,7 +38,7 @@ if (gem_counter_age <= 25)
 	draw_set_alpha(1);
 }
 draw_sprite(spr_gem, 3, 1280-144, 44);
-if (frac(gem_counter_age/5) == 0 || gem_counter_age > 25)
+if (frac(gem_counter_age/5) == 0 || gem_counter_age > 20)
 {
 	draw_text(1280-48, 48, global.gems);
 }

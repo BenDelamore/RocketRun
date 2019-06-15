@@ -22,6 +22,7 @@ repeat(320)
 
 global.gems = 0;							// Gems collected
 global.gems_before_end = 0;
+global.gems_lost = 0;
 global.land_speed = 0;
 global.is_paused = false;			
 global.timer_max = 50						// Game timer starting value
