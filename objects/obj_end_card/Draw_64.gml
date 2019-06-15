@@ -21,8 +21,8 @@ if (draw_alpha > 0 && grade_set)
 	draw_text(640, 514 + y, gem_text[grade_value]);
 	
 	draw_set_halign(2);
-	draw_text(685, 436 + y, global.gems_before_end);
-	draw_text(685, 470 + y, "- " + string(global.gems_lost));
+	draw_text(689, 436 + y, global.gems_before_end);
+	draw_text(689, 470 + y, "- " + string(global.gems_lost));
 	
 }
 
