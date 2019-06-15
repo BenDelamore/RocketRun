@@ -24,6 +24,11 @@ if (draw_alpha > 0 && grade_set)
 	draw_text(689, 436 + y, global.gems_before_end);
 	draw_text(689, 470 + y, "- " + string(global.gems_lost));
 	
+	if (global.end_time >= 7 && (frac(age/5) == 0 || age > 21))
+	{
+		draw_sprite(spr_mmhint, 0, 462, 578);	
+	}
+	
 }
 
 draw_set_alpha(1);
