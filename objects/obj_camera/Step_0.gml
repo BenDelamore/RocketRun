@@ -1,7 +1,16 @@
 //follow_x = clamp(obj_player.x, 640, room_width-640);
 
+if (obj_EngineConsole.is_active)
+{
+	offset = 16;
+}
+else
+{
+	offset = 0;
+}
+
 x = lerp(x, obj_player.x, lerp_speed);
-y = lerp(y, obj_player.y, lerp_speed);
+y = lerp(y, obj_player.y + offset, lerp_speed);
 
 draw_alpha = lerp(draw_alpha, 1, 0.05);
 if (global.game_time >= 5)

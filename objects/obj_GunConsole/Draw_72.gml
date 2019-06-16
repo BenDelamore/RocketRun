@@ -1,8 +1,8 @@
 /// @description update image_index
 
-if (is_in_range)
+if (player_in_range)
 {
-	if (is_being_held)
+	if (key_act_p)
 	{
 		image_index = 2;
 	}

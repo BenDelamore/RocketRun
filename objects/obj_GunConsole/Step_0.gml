@@ -16,47 +16,22 @@ scr_controls();
 
 if (!global.win && !global.lose && !global.is_paused)
 {
-	if (instance_exists(obj_player))
+	if (player_in_range)
 	{
-		if (point_distance(x, y, obj_player.x, obj_player.y) < 72)
-		{
-			is_in_range = true;
-			
-			if (key_act_p)
-			{
-			
-				frames_held = 0;
-			}
-			
-			is_being_held = key_act;
-			is_in_sweet_spot = frames_held > sweet_spot_min && frames_held < sweet_spot_max;
 		
-			if (key_act_p && is_being_held && !global.is_paused)
-			{
-				var bullet = instance_create_layer(x, y, "Instances", obj_Bullet);
-				bullet.x = x + spawn_x_offset;
-				bullet.y = y + spawn_y_offset;
-				bullet.direction = spawn_direction;
-				bullet.image_angle = spawn_direction;
-				bullet.speed = spawn_speed;
-				
-				if (is_in_sweet_spot)
-				{
-					obj_player.sp_cur += 50; // Increase player score.
-				}
-			}
-			
-			image_index = is_being_held ? 2 : 1;
-			
-		}
-		else
+		var delta_angle = key_up - key_down;
+		spawn_direction_cur += delta_angle * image_xscale;
+		spawn_direction_cur = clamp(spawn_direction_cur, spawn_direction_min, spawn_direction_max);
+		
+		if (key_act_p)
 		{
-			is_in_range = false;
+			var bullet = instance_create_layer(x, y, "Instances", obj_Bullet);
+			bullet.x = x + spawn_x_offset;
+			bullet.y = y + spawn_y_offset;
+			bullet.direction = spawn_direction_cur - spawn_direction_ini;
+			bullet.image_angle = spawn_direction_cur;
+			bullet.speed = spawn_speed;
 		}
-	}
-
-	if (is_being_held)
-	{
-		frames_held += 1;
+		image_index = key_act_p ? 2 : 1;
 	}
 }

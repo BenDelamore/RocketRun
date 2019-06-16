@@ -1,4 +1,4 @@
+console = instance_nearest(x, y, obj_GunConsole);
+is_active = 1;
 
-is_active = 0
-
-gun_angle = 0
+gun_angle = 180;

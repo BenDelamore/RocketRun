@@ -1,9 +1,12 @@
 //spawn_gem = false;
 collisons = false;
 
-spawn_x_offset = -90;
-spawn_y_offset = 0;
-spawn_direction = 160; 
+spawn_x_offset = 90 * image_xscale;
+spawn_y_offset = -24;
+spawn_direction_ini = 0;
+spawn_direction_cur = 0;
+spawn_direction_min = spawn_direction_cur - 45;
+spawn_direction_max = spawn_direction_cur + 45;
 spawn_speed = 12;
 
 is_in_range = false;

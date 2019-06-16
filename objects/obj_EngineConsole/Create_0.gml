@@ -1,6 +1,6 @@
 /// @description
 age = 1;
-is_being_held = false;
+is_active = false;
 collisons = false;
 
 

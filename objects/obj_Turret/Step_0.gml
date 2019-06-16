@@ -1,5 +1,3 @@
+gun_angle = console.spawn_direction_cur;
 
-if is_active
-{
-	image_angle = gun_angle
-}
+image_angle = gun_angle;
