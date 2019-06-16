@@ -98,7 +98,6 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 		grade_set = true;
 	}
 
-	
 	global.win = true;
 	rocket_dist_cur = 0;
 }

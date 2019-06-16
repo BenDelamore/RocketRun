@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "45524449-cc01-43fb-a5e6-56fd7173580a",
+            "Value": {
+                "id": "1bf4247a-09d9-48d7-b332-b51e0a92fab3",
+                "resourcePath": "sprites\\spr_speedo\\spr_speedo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4bb894de-e47f-4819-93c1-cd168e7b81d7",
             "Value": {
                 "id": "b6dbcd53-2716-46c5-9e57-43e8af15563b",

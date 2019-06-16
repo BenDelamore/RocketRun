@@ -1,8 +1,9 @@
 scr_controls();
 
-if (global.end_time > 2)
+if (global.end_time > 3)
 {
 	show_card = true;
+	age++;
 }
 
 if (show_card)
@@ -17,7 +18,7 @@ else
 }
 
 
-if (key_act_p && age >= 180)
+if (key_act_p && global.end_time >= 7)
 {
 	room_goto(rm_title);
 }

@@ -5,6 +5,10 @@ draw_sprite_ext(spr_ui_grad, 0, 0, 720, 1280, -1, 0, c_white, 0.25);
 draw_set_color($F5F5F5);
 draw_set_alpha(1);
 
+// Speedometer
+draw_sprite_ext(spr_speedo, 0, 96, 96, 1, 1, 0, c_white, .9);
+draw_sprite_ext(spr_speedo, 1, 96, 96, 1, 1,(-135) - 270 * (rocket_speed_cur/rocket_speed_max), c_white, .9);
+
 // Stamina bar bg
 //draw_rectangle(64, 63, 265, 69, 0);
 
@@ -21,15 +25,15 @@ draw_set_halign(0);
 draw_set_valign(1);
 
 //debug text
-draw_text(16, 128, global.land_speed);
-draw_text(16, 160, rocket_speed_cur);
+//draw_text(16, 128, global.land_speed);
+//draw_text(16, 160, rocket_speed_cur);
 
 // Progress bar text
 draw_text(128, 632, "Progress to Destination")
 
 draw_set_halign(2);
 // Progress bar value
-draw_text(1280-127, 632, progress_value);
+//draw_text(1280-127, 632, progress_value);
 
 // Score
 draw_set_alpha(0.9);
