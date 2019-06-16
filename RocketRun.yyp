@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0e933d1b-1646-4567-b3b6-e2a0b05bd4b0",
+            "Value": {
+                "id": "8e46bc14-94b8-4904-ab40-948a37590dc3",
+                "resourcePath": "objects\\obj_Thruster\\obj_Thruster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0f74c96f-4b6a-4d7a-836b-90cbfa10a681",
             "Value": {
                 "id": "9d9b4088-c58f-4287-8371-bf13270a025a",
@@ -92,6 +100,14 @@
                 "id": "c7eaead7-3e81-4d19-9167-fd85cfe02782",
                 "resourcePath": "rooms\\rm_credits\\rm_credits.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "241a4ad2-a064-4f1d-ba56-08c10497e68b",
+            "Value": {
+                "id": "6f1ff5c5-4923-4303-b561-0357a1385d01",
+                "resourcePath": "sprites\\spr_Asteroid_1\\spr_Asteroid_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -159,6 +175,14 @@
             }
         },
         {
+            "Key": "39709bb0-2ba4-42c8-81ed-c4c1ce05603e",
+            "Value": {
+                "id": "bdaa7726-5c80-49ce-b82a-244014c5b07c",
+                "resourcePath": "objects\\obj_ground_clouds\\obj_ground_clouds.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3cf8b114-8eff-46fa-83d8-36e4f5f5606e",
             "Value": {
                 "id": "089dabee-7702-4a00-9e5d-db8bdbc4ca51",
@@ -187,6 +211,14 @@
             "Value": {
                 "id": "1bf4247a-09d9-48d7-b332-b51e0a92fab3",
                 "resourcePath": "sprites\\spr_speedo\\spr_speedo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "45e174a5-0011-4ae8-b801-276106a337b6",
+            "Value": {
+                "id": "9e69dafe-0078-458b-bc30-34e56e919089",
+                "resourcePath": "sprites\\spr_Sputnik\\spr_Sputnik.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -383,6 +415,14 @@
             }
         },
         {
+            "Key": "8d792ba6-5b78-4d8d-8323-6ef949c8a4a0",
+            "Value": {
+                "id": "4035bc90-5cf1-4d45-9174-f1e4a5b73974",
+                "resourcePath": "sprites\\spr_ground_clouds\\spr_ground_clouds.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8eaa65cf-7269-4b8d-b2d8-ac5676da35da",
             "Value": {
                 "id": "fe5ae41f-6e49-492b-b3bd-5448fbcbe3c3",
@@ -427,6 +467,14 @@
             "Value": {
                 "id": "6c94057e-04f1-414f-996e-6fb41ded0c85",
                 "resourcePath": "sprites\\spr_Turret\\spr_Turret.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a254821d-77c0-49de-902c-f2498dd0a295",
+            "Value": {
+                "id": "fc898270-aedd-4347-9659-0d010f89bdcc",
+                "resourcePath": "sprites\\spr_Asteroid_2\\spr_Asteroid_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -543,6 +591,14 @@
             }
         },
         {
+            "Key": "cbaae003-2029-4954-9b4a-2e76535dfee0",
+            "Value": {
+                "id": "28b47c79-aab8-4fd4-b339-a833489558e4",
+                "resourcePath": "sprites\\spr_rocket_background\\spr_rocket_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e36b65e9-29e0-4539-a0cb-d5df419ca9c7",
@@ -572,6 +628,14 @@
                 "id": "dbfc6aaf-3b56-4575-b664-b8459605be6f",
                 "resourcePath": "views\\d14b6067-26a9-4c8e-abf4-b70afbb6125a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d170d8b1-d82c-4057-8a75-234e4aaa0ee4",
+            "Value": {
+                "id": "0bff8229-2a9b-4851-a1a2-d69aa0359316",
+                "resourcePath": "sprites\\spr_passthrough_platforms\\spr_passthrough_platforms.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -627,6 +691,22 @@
             "Value": {
                 "id": "25355666-ea81-4e14-a17d-00648c178dbc",
                 "resourcePath": "objects\\obj_messagebox\\obj_messagebox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e649c5f5-4cc6-4fac-a6fc-76bb6a0b60d8",
+            "Value": {
+                "id": "5c7123ea-bf4f-453a-9bc4-248cc42796de",
+                "resourcePath": "sprites\\spr_thruster_lever\\spr_thruster_lever.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e8a0885b-370f-4173-a99a-944bcbafd820",
+            "Value": {
+                "id": "bae0cf12-d071-4687-a73f-e1a241e407dc",
+                "resourcePath": "objects\\obj_Turret\\obj_Turret.yy",
                 "resourceType": "GMObject"
             }
         },
