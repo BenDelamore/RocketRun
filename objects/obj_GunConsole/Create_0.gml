@@ -11,7 +11,7 @@ is_being_held = false;
 frames_held = 0;
 
 player_in_range = false;
-interact_distance = 64;
+interact_distance = 32;
 
 sweet_spot_min = 90;
 sweet_spot_max = 110;

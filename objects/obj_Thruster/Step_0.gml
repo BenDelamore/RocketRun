@@ -14,4 +14,5 @@ else
 	{
 		image_index = 3
 	}
+	scr_screen_shake(1.25, 1);
 }

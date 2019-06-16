@@ -30,9 +30,9 @@ if (!global.win && !global.lose)
 	
 		// Spawn crates
 	
-		if ((random(1)) <= 0.1 )
+		if ((random(1)) <= 0.08 )
 		{
-			with (instance_create_depth(random_range(0, room_width), room_height, 0, obj_crate))
+			with (instance_create_depth(random_range(0, room_width), room_height, 120, obj_crate))
 			{
 				vsp = random_range(-2, -7);
 				rsp = random_range(-2, 2);
