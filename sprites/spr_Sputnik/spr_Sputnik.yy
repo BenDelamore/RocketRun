@@ -2,7 +2,7 @@
     "id": "45e174a5-0011-4ae8-b801-276106a337b6",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_Sputnik",
+    "name": "spr_sputnik",
     "For3D": false,
     "HTile": false,
     "VTile": false,

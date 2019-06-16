@@ -25,11 +25,12 @@ if (!global.win && !global.lose && !global.is_paused)
 		
 		if (key_act_p)
 		{
+			scr_audio("laser");
 			var bullet = instance_create_layer(x, y, "Instances", obj_Bullet);
 			bullet.x = x + spawn_x_offset;
 			bullet.y = y + spawn_y_offset;
 			bullet.direction = spawn_direction_cur - spawn_direction_ini;
-			bullet.image_angle = spawn_direction_cur;
+			bullet.image_angle = spawn_direction_cur - spawn_direction_ini;
 			bullet.speed = spawn_speed;
 		}
 		image_index = key_act_p ? 2 : 1;
