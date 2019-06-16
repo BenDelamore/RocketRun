@@ -3,6 +3,15 @@ if (global.game_time > 17)
 	age++;
 }
 
+if (point_distance(x, y, obj_player.x, obj_player.y) <= interact_distance)
+{
+	player_in_range = true;
+}
+else
+{
+	player_in_range = false;	
+}
+
 scr_controls();
 
 if (!global.win && !global.lose && !global.is_paused)

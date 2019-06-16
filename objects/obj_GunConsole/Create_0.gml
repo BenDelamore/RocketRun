@@ -10,6 +10,9 @@ is_in_range = false;
 is_being_held = false;
 frames_held = 0;
 
+player_in_range = false;
+interact_distance = 64;
+
 sweet_spot_min = 90;
 sweet_spot_max = 110;
 is_in_sweet_spot = false;

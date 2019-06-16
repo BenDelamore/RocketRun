@@ -5,6 +5,8 @@ if (instance_place(x,y, obj_crate) || instance_place(x,y, obj_player))
 }
 
 this = id;
+player_in_range = false;
+interact_distance = 72;
 
 spawn_gem = false;
 collisons = true;

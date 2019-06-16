@@ -26,10 +26,10 @@ if (place_meeting(x + hsp, y, obj_solid) && collisons)
 	{
 		x = x + sign(hsp);
 	}
-	if (xc.collisons)
-	{
-		hsp = 0;
-	}
+
+	
+	hsp = 0;
+	
 }
 x = x + hsp;
 
@@ -42,10 +42,10 @@ if (place_meeting(x, y + vsp, obj_solid) && collisons)
 	{
 		y = y + sign(vsp);
 	}
-	if (yc.collisons)
-	{
-		vsp = 0;
-	}
+
+	
+	vsp = 0;
+	
 }
 y = y + vsp;
 
