@@ -32,6 +32,21 @@ if (global.sound)
 		audio_sound_pitch(sfx_laser, 1.1 - random(0.2));
 		break;
 		
+		case "thruster":
+		if (obj_EngineConsole.is_active)
+		{
+			if (!audio_is_playing(sfx_thruster))
+			{
+				audio_sound_pitch(sfx_thruster, 0.7);
+				audio_play_sound(sfx_thruster,64,1);
+			}
+		}
+		else
+		{
+			audio_stop_sound(sfx_thruster);	
+		}
+		break;
+		
 		/*
 		case "danger": // danger level 1
 		var danger2_value = 1 - (clamp(abs(obj_player.y - obj_water.y)/128 ,0 ,1 ));

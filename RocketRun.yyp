@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "e41921e1-7453-4f36-9f07-45ff57fe18ab",
+            "Value": {
+                "id": "90661d3e-f0ee-45dd-ad12-fc45bd27b392",
+                "resourcePath": "sounds\\sfx_thruster\\sfx_thruster.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e649c5f5-4cc6-4fac-a6fc-76bb6a0b60d8",
             "Value": {
                 "id": "5c7123ea-bf4f-453a-9bc4-248cc42796de",

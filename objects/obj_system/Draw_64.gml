@@ -58,8 +58,6 @@ draw_set_color($583AE9);
 // Timer bar
 //draw_rectangle(540, 73, (200 * (global.timer_cur/global.timer_max)) + 540, 77, 0);
 
-draw_set_color($333333);
-if (global.win) {draw_set_color($367a1f);}
-if (global.lose) {draw_set_color($2626d9);}
+draw_set_color($434EEB);
 //Progress bar
 draw_rectangle(128, 656, round(1024 * progress_adj + 128), 656+5, 0);
