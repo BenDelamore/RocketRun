@@ -1,7 +1,7 @@
 
 image_speed = 1
 
-if (obj_EngineConsole.is_active = false)
+if (!obj_EngineConsole.is_active)
 {
 	if image_index >= 3
 	{

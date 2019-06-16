@@ -14,11 +14,12 @@ if (point_distance(x, y, obj_player.x, obj_player.y) <= interact_distance)
 	}
 	else
 	{
-		is_active = false;	
+		is_active = false;
 	}
 }
 else
 {
 	player_in_range = false;	
+	is_active = false;
 }
 image_index = is_active;
