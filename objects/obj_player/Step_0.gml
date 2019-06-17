@@ -22,6 +22,8 @@ if (!global.is_paused)
 	var movex = (key_right - key_left);
 	hsp = lerp(hsp, movex * walksp * walksp_mult, 0.33);
 
+	state = clamp(abs(hsp), 0, 1);
+	
 	// Sprite flipping
 	if (hsp < -walksp * 0.7)
 	{
@@ -38,12 +40,14 @@ if (!global.is_paused)
 		// Vertical movement calculation
 		var movey = (key_down - key_up);
 		vsp = lerp(vsp, movey * walksp * walksp_mult, 0.33);
+		if (!place_meeting(x, y+1, obj_solid)) {state = 2;}
 	}
 }
 else
 {
 	vsp = 0;
 	hsp = 0;
+	state = 0;
 }
 
 
@@ -80,20 +84,4 @@ if (instance_exists(obj_interactable))
 	}
 }
 
-
-
-/*
-// Squash and stretch
-if (key_up && !grounded)
-{
-	draw_yscale = 1.15;
-	draw_xscale = 0.88;
-}
-draw_xscale = lerp(draw_xscale, 1, .12);
-draw_yscale = lerp(draw_yscale, 1, .12);
-	
-if (place_meeting(x,y+1,obj_solid) && !place_meeting(x,yprevious +1, obj_solid))
-{
-	draw_yscale = .8;
-	draw_xscale = 1.12;
-}
+sprite_index = state_spr[state];
