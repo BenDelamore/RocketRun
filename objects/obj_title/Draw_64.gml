@@ -5,7 +5,7 @@ draw_set_valign(1);
 draw_set_font(fnt_title);
 draw_set_alpha(1);
 
-draw_text(640, 320, "ROCKET RUN");
+draw_text(640, 320, "ROCKET RUSH");
 
 draw_set_font(fnt_body);
 

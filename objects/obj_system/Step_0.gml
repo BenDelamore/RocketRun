@@ -29,25 +29,28 @@ if (!global.win)
 		}
 	
 		// Spawn crates
-	
-		if ((random(1)) <= 0.08 )
-		{
-			with (instance_create_depth(random_range(0, room_width), room_height, 120, obj_crate))
-			{
-				vsp = random_range(-2, -7);
-				rsp = random_range(-2, 2);
-				collisons = false;
-			}
-		}
 		
-		// Spawn Sputnik
-		if ((random(1)) <= 0.002 )
+		if (rocket_dist_cur > 50)
 		{
-			with (instance_create_depth(random_range(0, room_width), room_height, 180, obj_sputnik))
+			if ((random(1)) <= 0.08 )
 			{
-				vsp = random_range(-2, -7);
-				rsp = random_range(-2, 2);
-				collisons = false;
+				with (instance_create_depth(random_range(0, room_width), room_height, 120, obj_crate))
+				{
+					vsp = random_range(-2, -7);
+					rsp = random_range(-2, 2);
+					collisons = false;
+				}
+			}
+		
+			// Spawn Sputnik
+			if ((random(1)) <= 0.002 )
+			{
+				with (instance_create_depth(random_range(0, room_width), room_height, 180, obj_sputnik))
+				{
+					vsp = random_range(-2, -7);
+					rsp = random_range(-2, 2);
+					collisons = false;
+				}
 			}
 		}
 	}
