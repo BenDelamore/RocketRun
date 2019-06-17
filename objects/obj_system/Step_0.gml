@@ -76,7 +76,7 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 		global.land_speed = rocket_speed_cur;
 	}
 	
-	scr_screen_shake(global.land_speed/3, 5);
+	scr_screen_shake(global.land_speed, 5);
 	
 	with (obj_end_card)
 	{

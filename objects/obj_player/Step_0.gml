@@ -60,7 +60,7 @@ sp_cur = clamp(sp_cur, 0, sp_max + 50);
 scr_move(hsp);
 
 target_block = 0;
-if (instance_exists(obj_interactable))
+if (instance_exists(obj_interactable) && !global.win)
 {
 	target_block = instance_nearest(x, y, obj_interactable)
 
