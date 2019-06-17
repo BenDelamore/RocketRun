@@ -5,3 +5,6 @@ select = 0;
 y = 400;
 
 scr_audio("musicT");
+
+mx = mouse_x;
+my = mouse_y;
