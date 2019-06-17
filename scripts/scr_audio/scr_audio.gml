@@ -25,8 +25,8 @@ if (global.sound)
 		break;
 		
 		case "musicT": //background music
-		audio_sound_gain(sfx_music_safe, 0, 1000)
-		audio_sound_gain(sfx_music_title, .4, 1000)
+		audio_sound_gain(sfx_music_safe, 0, 2000)
+		audio_sound_gain(sfx_music_title, .43, 500)
 		if (!audio_is_playing(sfx_music_title))
 		{
 			audio_play_sound(sfx_music_title,64,1);
