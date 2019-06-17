@@ -3,8 +3,6 @@ image_speed = 0;
 image_index = gemType;
 
 target = obj_player;
-target_distance = point_distance(x, y, target.x, target.y);
-direction = point_direction(x, y, target.x, target.y)
 
 age = 0;
 spd = 0;
