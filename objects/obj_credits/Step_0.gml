@@ -1,0 +1,1 @@
+fade_a = lerp(fade_a, 1, 0.02);

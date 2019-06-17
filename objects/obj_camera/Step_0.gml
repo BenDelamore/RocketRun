@@ -12,7 +12,7 @@ else
 x = lerp(x, obj_player.x, lerp_speed);
 y = lerp(y, obj_player.y + offset, lerp_speed);
 
-draw_alpha = lerp(draw_alpha, 1, 0.05);
+draw_alpha = lerp(draw_alpha, 1, 0.04);
 if (global.game_time >= 5)
 {
 	lerp_speed = 0.1;	
