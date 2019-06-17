@@ -3,7 +3,7 @@ global.game_time += 1/room_speed;
 scr_controls();
 
 // Rocket physics calculation
-if (!global.win && !global.lose)
+if (!global.win)
 {
 	if (!global.is_paused)
 	{
@@ -115,9 +115,10 @@ if (rocket_dist_cur <=0 && !global.win && !global.lose)
 	rocket_dist_cur = 0;
 }
 
-if (global.win || global.lose)
+if (global.win)
 {
-	global.end_time += 1/room_speed;	
+	global.end_time += 1/room_speed;
+	global.is_paused = false;
 }
 
 if (audio_sound_get_gain(sfx_music_title) == 0)
