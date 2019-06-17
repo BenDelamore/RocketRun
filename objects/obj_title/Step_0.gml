@@ -31,3 +31,8 @@ if (key_act_p)
 		game_end();
 	}
 }
+
+if (audio_sound_get_gain(sfx_music_safe) == 0)
+{
+	audio_stop_sound(sfx_music_safe)
+}

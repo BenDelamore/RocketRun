@@ -36,3 +36,5 @@ global.grv = 0.3; // Gravity
 
 upos = shader_get_uniform(shd_motion_blur,"pos");//uniform for x,y
 layer_vspeed("Background", -rocket_speed_cur);
+
+scr_audio("music");

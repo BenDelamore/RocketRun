@@ -4,4 +4,4 @@ select = 0;
 // Menu origin
 y = 400;
 
-scr_audio("music");
+scr_audio("musicT");

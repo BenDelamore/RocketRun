@@ -117,3 +117,8 @@ if (global.win || global.lose)
 {
 	global.end_time += 1/room_speed;	
 }
+
+if (audio_sound_get_gain(sfx_music_title) == 0)
+{
+	audio_stop_sound(sfx_music_title)
+}

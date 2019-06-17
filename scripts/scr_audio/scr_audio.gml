@@ -16,9 +16,20 @@ if (global.sound)
 		break;
 		
 		case "music": //background music
+		audio_sound_gain(sfx_music_title, 0, 2000)
+		audio_sound_gain(sfx_music_safe, .33, 0)
 		if (!audio_is_playing(sfx_music_safe))
 		{
 			audio_play_sound(sfx_music_safe,64,1);
+		}
+		break;
+		
+		case "musicT": //background music
+		audio_sound_gain(sfx_music_safe, 0, 1000)
+		audio_sound_gain(sfx_music_title, .4, 1000)
+		if (!audio_is_playing(sfx_music_title))
+		{
+			audio_play_sound(sfx_music_title,64,1);
 		}
 		break;
 		
@@ -43,7 +54,7 @@ if (global.sound)
 		}
 		else
 		{
-			audio_stop_sound(sfx_thruster);	
+			audio_stop_sound(sfx_thruster);
 		}
 		break;
 		

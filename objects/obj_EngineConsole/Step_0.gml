@@ -11,7 +11,6 @@ if (point_distance(x, y, obj_player.x, obj_player.y) <= interact_distance)
 	if (!global.win && !global.lose)
 	{
 		is_active = key_act;
-		scr_audio("thruster");
 	}
 	else
 	{
@@ -23,4 +22,5 @@ else
 	player_in_range = false;	
 	is_active = false;
 }
+scr_audio("thruster");
 image_index = is_active;

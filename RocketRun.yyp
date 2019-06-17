@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0f97e5b2-11b0-496a-97d5-d6c121e18d12",
+            "Value": {
+                "id": "5d1d8ad6-55bc-41b8-abe9-597f82af1320",
+                "resourcePath": "sounds\\sfx_music_title\\sfx_music_title.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "130afb09-c04a-4a36-81f9-0c7f2045f152",
             "Value": {
                 "id": "d86fe39d-a11a-4816-b37d-0d7ad675e22f",
